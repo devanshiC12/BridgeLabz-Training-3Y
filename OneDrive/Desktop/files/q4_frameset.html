@@ -1,0 +1,21 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD HTML 4.01 Frameset//EN" "http://www.w3.org/TR/html4/frameset.dtd">
+<html lang="en">
+<head>
+    <!-- Question 4: Frameset with top navigation and bottom message -->
+    <title>Q4 - Frameset Layout</title>
+</head>
+
+<!-- Top frame (20% height) holds navigation, bottom frame (80%) holds welcome message -->
+<frameset rows="20%,80%">
+    <frame src="nav.html" name="topFrame" title="Navigation Frame">
+    <frame src="welcome.html" name="bottomFrame" title="Welcome Frame">
+
+    <!-- Fallback content for browsers that do not support frames -->
+    <noframes>
+        <body>
+            <p>Your browser does not support frames.</p>
+        </body>
+    </noframes>
+</frameset>
+
+</html>

@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <!-- Question 16: URI Encoding Demonstration -->
+    <meta charset="UTF-8">
+    <title>Q16 - URI Encoding</title>
+</head>
+<body>
+
+    <h1>URI Encoding Example</h1>
+
+    <p>Original (unencoded) URL text: https://example.com/search?query=HTML & CSS</p>
+
+    <!--
+        Spaces and special characters cannot appear directly in a URL.
+        The space character is encoded as %20 so the browser can
+        correctly interpret the link.
+    -->
+    <p>
+        Encoded link:
+        <a href="https://example.com/search?query=HTML%20&%20CSS">
+            https://example.com/search?query=HTML%20&amp;%20CSS
+        </a>
+    </p>
+
+</body>
+</html>

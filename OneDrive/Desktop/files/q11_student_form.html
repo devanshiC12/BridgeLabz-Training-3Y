@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <!-- Question 11: Student Information Form -->
+    <meta charset="UTF-8">
+    <title>Q11 - Student Information Form</title>
+</head>
+<body>
+
+    <h1>Student Information</h1>
+
+    <form method="post" action="#">
+
+        <label for="name">Name:</label><br>
+        <input type="text" id="name" name="name" required><br><br>
+
+        <label for="rollno">Roll Number:</label><br>
+        <input type="text" id="rollno" name="rollno" required><br><br>
+
+        <label for="course">Course:</label><br>
+        <select id="course" name="course" required>
+            <!-- Default option, disabled and selected so it cannot be
+                 chosen as a real submission value -->
+            <option value="" disabled selected>Select Course</option>
+            <option value="btech">B.Tech</option>
+            <option value="bca">BCA</option>
+            <option value="mca">MCA</option>
+            <option value="mba">MBA</option>
+        </select><br><br>
+
+        <input type="submit" value="Submit">
+
+    </form>
+
+</body>
+</html>

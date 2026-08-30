@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <!-- Question 17 (Part 1): form.html - contains the input form -->
+    <meta charset="UTF-8">
+    <title>Q17 - Form Page</title>
+</head>
+<body>
+
+    <h1>Submit Your Name</h1>
+
+    <!--
+        The form's target attribute points to the name of the iframe
+        below ("resultFrame"). This makes the form's response load
+        inside the iframe instead of replacing the whole page.
+    -->
+    <form action="result.html" method="get" target="resultFrame">
+        <label for="username">Enter your name:</label>
+        <input type="text" id="username" name="username" required>
+        <input type="submit" value="Submit">
+    </form>
+
+    <h2>Result:</h2>
+
+    <!-- This iframe initially shows nothing; after clicking Submit,
+         it loads result.html -->
+    <iframe
+        name="resultFrame"
+        title="Result Frame"
+        width="400"
+        height="150">
+    </iframe>
+
+</body>
+</html>
