@@ -1,0 +1,71 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: 'Georgia', serif;
+  background-color: #ffffff;
+  color: #1c1c1c;
+  padding: 0 20px;
+}
+
+.article-header {
+  text-align: center;
+  padding: 50px 0 20px;
+}
+
+.article-header h1 {
+  font-size: 2.3rem;
+  margin-bottom: 8px;
+}
+
+.byline {
+  color: #666;
+  font-size: 0.95rem;
+}
+
+.article-body {
+  max-width: 700px;
+  margin: 0 auto 60px;
+}
+
+/* ===== Consistent spacing between paragraphs ===== */
+.article-body p {
+  margin-bottom: 22px;
+  line-height: 1.7;
+  font-size: 1.05rem;
+}
+
+/* ===== Large first letter (drop cap) ===== */
+.article-body p::first-letter {
+  font-size: 2.2em;
+  font-weight: bold;
+  float: left;
+  line-height: 1;
+  margin-right: 6px;
+  color: #8a1f1f;
+}
+
+/* ===== Bold first line of each paragraph ===== */
+.article-body p::first-line {
+  font-weight: bold;
+}
+
+/* ===== Highlighted keywords ===== */
+mark {
+  background-color: #fff3b0;
+  color: #333;
+  padding: 0 3px;
+}
+
+/* ===== Blockquote emphasis ===== */
+blockquote {
+  margin: 30px 0;
+  padding: 16px 24px;
+  border-left: 5px solid #8a1f1f;
+  background-color: #f7f2f2;
+  font-style: italic;
+  color: #4a2a2a;
+}

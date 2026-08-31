@@ -1,0 +1,68 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  background-color: #ece7da;
+  font-family: 'Times New Roman', Times, serif;
+}
+
+.page {
+  max-width: 900px;
+  margin: 0 auto;
+  padding: 40px 24px 60px;
+}
+
+.masthead {
+  text-align: center;
+  font-size: 3rem;
+  letter-spacing: 2px;
+  border-bottom: 4px double #222;
+  padding-bottom: 16px;
+  margin-bottom: 30px;
+  /* Spans across all columns since it sits outside .columns */
+}
+
+/* ===== Newspaper-style column layout ===== */
+.columns {
+  column-count: 3;
+  column-gap: 32px;
+  text-align: justify;
+  color: #1c1c1c;
+  font-size: 0.95rem;
+  line-height: 1.6;
+}
+
+.columns p {
+  margin-bottom: 16px;
+  break-inside: avoid; /* keeps paragraphs from splitting awkwardly */
+}
+
+/* ===== Image floated left, text wraps around it ===== */
+.float-img {
+  float: left;
+  width: 140px;
+  height: 140px;
+  object-fit: cover;
+  margin: 0 14px 10px 0;
+  border: 3px solid #444;
+}
+
+/* ===== Responsive: fewer columns on smaller screens ===== */
+@media (max-width: 700px) {
+  .columns {
+    column-count: 2;
+  }
+}
+
+@media (max-width: 480px) {
+  .columns {
+    column-count: 1;
+  }
+
+  .masthead {
+    font-size: 2rem;
+  }
+}

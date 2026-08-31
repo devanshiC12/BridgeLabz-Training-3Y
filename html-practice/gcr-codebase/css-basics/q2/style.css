@@ -1,0 +1,100 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: Georgia, serif;
+  background-color: #f0efe9;
+  color: #222;
+}
+
+header {
+  text-align: center;
+  padding: 40px 0 20px;
+}
+
+header h1 {
+  font-size: 3rem;
+  font-weight: 700;
+}
+
+nav {
+  background-color: #2f3e2f;
+}
+
+nav ul {
+  list-style: none;
+  display: flex;
+  justify-content: center;
+  gap: 30px;
+  padding: 14px 0;
+}
+
+nav a {
+  color: #fff;
+  text-decoration: none;
+  font-size: 15px;
+}
+
+nav a:hover {
+  text-decoration: underline;
+}
+
+/* ===== Full-width sections with generous spacing ===== */
+.section {
+  width: 100%;
+  padding: 80px 10%;
+  border-bottom: 1px solid rgba(0, 0, 0, 0.1);
+}
+
+.section h2 {
+  font-size: 2rem;
+  font-weight: 600;
+  margin-bottom: 16px;
+}
+
+.section p {
+  font-size: 1rem;
+  max-width: 65ch;
+  line-height: 1.7;
+}
+
+/* ===== Linear gradient section ===== */
+.gradient-linear {
+  background: linear-gradient(120deg, #a8d5ba, #6fa8dc);
+  color: #10261a;
+}
+
+/* ===== Radial gradient section ===== */
+.gradient-radial {
+  background: radial-gradient(circle at top left, #ffe9b3, #d99a5b);
+  color: #3b2410;
+}
+
+/* ===== Parallax-style fixed background sections ===== */
+.parallax-1 {
+  background-image: url("https://images.unsplash.com/photo-1506905925346-21bda4d32df4");
+  background-size: cover;
+  background-attachment: fixed;
+  background-position: center;
+  color: #fff;
+  text-shadow: 0 1px 4px rgba(0, 0, 0, 0.6);
+}
+
+.parallax-2 {
+  background-image: url("https://images.unsplash.com/photo-1454496522488-7a8e488e8606");
+  background-size: cover;
+  background-attachment: fixed;
+  background-position: center;
+  color: #fff;
+  text-shadow: 0 1px 4px rgba(0, 0, 0, 0.6);
+}
+
+footer {
+  text-align: center;
+  padding: 24px 0;
+  background-color: #2f3e2f;
+  color: #fff;
+}

@@ -1,0 +1,94 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: Arial, sans-serif;
+  background-color: #f2f4f7;
+  color: #26313c;
+}
+
+.page-title {
+  text-align: center;
+  padding: 40px 0 10px;
+}
+
+/* ===== Equal-width flex columns ===== */
+.pricing {
+  display: flex;
+  justify-content: center;
+  align-items: stretch;   /* keeps equal height across varying text */
+  gap: 24px;
+  flex-wrap: wrap;
+  padding: 40px 5% 60px;
+}
+
+.plan {
+  background-color: #ffffff;
+  flex: 1 1 260px;
+  max-width: 300px;
+  display: flex;
+  flex-direction: column;
+  padding: 32px 24px;
+  border: 1px solid #dfe3e8;
+  border-radius: 8px;
+  text-align: center;
+  transition: transform 0.25s ease, background-color 0.25s ease;
+}
+
+.plan:hover {
+  transform: scale(1.05);
+  background-color: #eef5ff;
+}
+
+.plan h2 {
+  margin-bottom: 12px;
+}
+
+.price {
+  font-size: 2rem;
+  font-weight: bold;
+  margin-bottom: 20px;
+  color: #2f6fbd;
+}
+
+.price span {
+  font-size: 1rem;
+  font-weight: normal;
+  color: #667;
+}
+
+.plan ul {
+  list-style: none;
+  margin-bottom: 24px;
+  flex-grow: 1; /* pushes button to same vertical position across cards */
+}
+
+.plan ul li {
+  padding: 6px 0;
+  border-bottom: 1px solid #f0f0f0;
+  font-size: 0.95rem;
+}
+
+.btn {
+  display: inline-block;
+  padding: 10px 0;
+  background-color: #2f6fbd;
+  color: #fff;
+  text-decoration: none;
+  border-radius: 6px;
+  font-weight: bold;
+  transition: background-color 0.25s ease;
+}
+
+.btn:hover {
+  background-color: #1f4f8f;
+}
+
+/* ===== Highlight the most popular plan ===== */
+.plan.popular {
+  border: 3px solid #2f6fbd;
+  box-shadow: 0 6px 16px rgba(47, 111, 189, 0.25);
+}
