@@ -1,0 +1,34 @@
+* { box-sizing: border-box; }
+body { margin: 0; font-family: Arial, sans-serif; }
+
+header, footer {
+  position: sticky; /* keeps header/footer visible-ish for a "fixed" feel */
+  text-align: center;
+  background: #1a1a2e;
+  color: #fff;
+  padding: 1rem;
+  top: 0;
+  z-index: 2;
+}
+
+section {
+  min-height: 60vh;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding: 2rem;
+  color: #fff;
+  text-align: center;
+  font-size: 1.2rem;
+}
+
+/* Linear gradient section with fixed attachment for parallax-like effect */
+.linear-section {
+  background: linear-gradient(135deg, #ff6a00, #ee0979);
+  background-attachment: fixed;
+}
+
+/* Radial gradient section */
+.radial-section {
+  background: radial-gradient(circle at center, #43cea2, #185a9d);
+}

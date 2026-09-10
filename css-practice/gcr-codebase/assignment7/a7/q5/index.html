@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<title>Advanced CSS Selectors</title>
+<link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <header><h1>Advanced CSS Selectors Demo</h1></header>
+
+  <main>
+    <section>
+      <h2>Attribute Selectors</h2>
+      <form>
+        <input type="text" placeholder="Text input (styled via [type='text'])">
+        <br>
+        <a href="https://example.com">Secure link (styled via [href^='https'])</a>
+      </form>
+    </section>
+
+    <section>
+      <h2>Pseudo-classes &amp; Pseudo-elements</h2>
+      <ul class="item-list">
+        <li>Item One</li>
+        <li>Item Two</li>
+        <li>Item Three</li>
+        <li>Item Four</li>
+      </ul>
+    </section>
+
+    <section>
+      <h2>Combinators</h2>
+      <div class="parent">
+        <p>Direct child paragraph (&gt;)</p>
+        <span>Adjacent sibling span (+)</span>
+        <span>General sibling span (~)</span>
+        <div class="nested"><p>Descendant paragraph</p></div>
+      </div>
+    </section>
+  </main>
+
+  <footer><p>Assignment 7 - Question 5</p></footer>
+</body>
+</html>

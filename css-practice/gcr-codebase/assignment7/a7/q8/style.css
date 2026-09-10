@@ -1,0 +1,51 @@
+body { margin: 0; font-family: Arial, sans-serif; background: #f4f6f8; }
+
+header, footer {
+  text-align: center;
+  background: #264653;
+  color: #fff;
+  padding: 1rem;
+}
+
+/* Center the demonstration using Flexbox */
+.wrap {
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+  justify-content: center;
+  gap: 40px;
+  padding: 3rem 2rem;
+}
+
+/* Outermost layer represents margin (default box-sizing: content-box) */
+.margin-layer {
+  background: #f1c40f;   /* margin color */
+  padding: 30px;
+  text-align: center;
+  outline: 2px dashed #b7950b;
+}
+
+.border-layer {
+  background: #e67e22;   /* border color */
+  padding: 20px;
+  border: 6px solid #a04000;
+  box-sizing: border-box; /* demonstrates border-box vs default content-box */
+}
+
+.padding-layer {
+  background: #2ecc71;   /* padding color */
+  padding: 20px;
+}
+
+.content-layer {
+  background: #3498db;   /* content color */
+  color: #fff;
+  padding: 20px;
+  text-align: center;
+}
+
+.explain {
+  max-width: 350px;
+  font-size: 0.95rem;
+  line-height: 1.6;
+}

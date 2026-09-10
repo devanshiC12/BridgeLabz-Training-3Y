@@ -1,0 +1,53 @@
+* { box-sizing: border-box; }
+body { margin: 0; font-family: Arial, sans-serif; background: #f0f2f5; }
+
+header, footer {
+  text-align: center;
+  background: #34495e;
+  color: #fff;
+  padding: 1rem;
+}
+
+/* Flexbox centers boxes both vertically and horizontally */
+.center-wrap {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 30px;
+  flex-wrap: wrap;
+  min-height: 70vh; /* ensures vertical centering has room to work */
+  padding: 2rem;
+}
+
+.box {
+  color: #fff;
+  text-align: center;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  border-radius: 8px;
+  padding: 10px;
+  overflow: auto; /* demonstrates overflow handling */
+}
+
+/* Fixed px sizing */
+.box-px {
+  width: 150px;
+  height: 100px;
+  background: #2980b9;
+}
+
+/* Percentage width relative to parent, with min-height */
+.box-percent {
+  width: 50%;
+  min-height: 150px;
+  max-width: 400px; /* demonstrates max-width */
+  background: #27ae60;
+}
+
+/* Viewport height + em width */
+.box-vh-em {
+  height: 30vh;
+  width: 10em;
+  background: #c0392b;
+}
