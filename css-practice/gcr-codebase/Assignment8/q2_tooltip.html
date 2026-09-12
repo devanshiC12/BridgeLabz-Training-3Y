@@ -1,0 +1,95 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<title>Q2 - Tooltip Demo</title>
+<style>
+* { box-sizing: border-box; }
+body {
+  font-family: Arial, sans-serif;
+  margin: 0;
+  background: #f4f6f8;
+}
+
+header, footer {
+  text-align: center;
+  padding: 16px;
+  background: #34495e;
+  color: #fff;
+}
+
+/* Center all tooltip examples using flexbox */
+.center-wrap {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 40px;
+  flex-wrap: wrap;
+  min-height: 60vh;
+}
+
+.tooltip-item {
+  position: relative;
+  font-size: 1.4rem;
+  background: #fff;
+  padding: 14px 20px;
+  border-radius: 8px;
+  box-shadow: 0 2px 6px rgba(0,0,0,0.15);
+  cursor: pointer;
+}
+
+/* Hidden tooltip, shown on hover with fade transition */
+.tooltip-text {
+  position: absolute;
+  bottom: 120%;
+  left: 50%;
+  transform: translateX(-50%);
+  background: #2c3e50;
+  color: #fff;
+  font-size: 0.85rem;
+  padding: 6px 10px;
+  border-radius: 4px;
+  white-space: nowrap;
+  opacity: 0;
+  visibility: hidden;
+  transition: opacity 0.3s ease-in-out;
+}
+
+.tooltip-item:hover .tooltip-text {
+  opacity: 1;
+  visibility: visible;
+}
+</style>
+</head>
+<body>
+  <header>
+    <h1>CSS-Only Tooltip Demonstration</h1>
+  </header>
+
+  <main class="center-wrap">
+    <span class="tooltip-item">
+      🏠
+      <span class="tooltip-text">Home</span>
+    </span>
+
+    <span class="tooltip-item">
+      ⭐
+      <span class="tooltip-text">Favorites</span>
+    </span>
+
+    <span class="tooltip-item">
+      Settings
+      <span class="tooltip-text">Open settings panel</span>
+    </span>
+
+    <span class="tooltip-item">
+      ✉️
+      <span class="tooltip-text">You have new messages</span>
+    </span>
+  </main>
+
+  <footer>
+    <p>&copy; 2026 Tooltip Assignment</p>
+  </footer>
+</body>
+</html>

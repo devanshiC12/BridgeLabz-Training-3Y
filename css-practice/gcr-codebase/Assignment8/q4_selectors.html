@@ -1,0 +1,131 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<title>Q4 - CSS Selectors Practice</title>
+<style>
+* { box-sizing: border-box; }
+body {
+  font-family: Arial, sans-serif;
+  margin: 0;
+  background: #fafafa;
+  color: #2c3e50;
+  line-height: 1.6;
+}
+
+header, footer {
+  text-align: center;
+  padding: 16px;
+  background: #16a085;
+  color: #fff;
+}
+
+main {
+  max-width: 700px;
+  margin: 0 auto;
+  padding: 30px 20px;
+}
+
+/* Element selector: applies to every <p> */
+p {
+  padding: 10px;
+  margin: 8px 0;
+}
+
+/* Class selector */
+.highlight {
+  background: #fff3cd;
+  border-left: 4px solid #f39c12;
+}
+
+/* ID selector */
+#special {
+  background: #d1ecf1;
+  border-left: 4px solid #17a2b8;
+}
+
+/* Attribute selector: links opening in new tab */
+a[target="_blank"] {
+  color: #8e44ad;
+  font-weight: bold;
+}
+
+/* Descendant combinator: any <p> inside .parent */
+.parent p {
+  background: #e8f8f5;
+}
+
+/* Child combinator: only direct <p> children */
+.child-demo > p {
+  background: #fdebd0;
+}
+
+/* Adjacent sibling combinator: <p> immediately after <h2> */
+h2 + p {
+  color: #c0392b;
+  font-weight: bold;
+}
+
+/* General sibling combinator: all <p> after <h3> */
+h3 ~ p {
+  color: #2980b9;
+}
+
+/* Descendant selector on list items */
+.fruit-list li {
+  list-style: square;
+  margin-left: 20px;
+}
+</style>
+</head>
+<body>
+  <header>
+    <h1>CSS Selectors Practice Page</h1>
+  </header>
+
+  <main>
+    <!-- Element selector -->
+    <p>This paragraph is styled using an <strong>element selector</strong> (p).</p>
+
+    <!-- Class selector -->
+    <p class="highlight">This paragraph uses a <strong>class selector</strong> (.highlight).</p>
+
+    <!-- ID selector -->
+    <p id="special">This paragraph uses an <strong>ID selector</strong> (#special).</p>
+
+    <!-- Attribute selector -->
+    <a href="https://example.com" target="_blank">External link (attribute selector target="_blank")</a>
+
+    <!-- Descendant combinator -->
+    <div class="parent">
+      <p>Descendant selector: .parent p</p>
+    </div>
+
+    <!-- Child combinator -->
+    <div class="child-demo">
+      <p>Direct child: .child-demo > p</p>
+      <div><p>Not a direct child (nested deeper)</p></div>
+    </div>
+
+    <!-- Adjacent sibling combinator -->
+    <h2>Heading</h2>
+    <p>Adjacent sibling: h2 + p</p>
+
+    <!-- General sibling combinator -->
+    <h3>Another Heading</h3>
+    <p>First sibling paragraph</p>
+    <p>General sibling: h3 ~ p (applies to all following siblings)</p>
+
+    <!-- List for descendant demo -->
+    <ul class="fruit-list">
+      <li>Apple</li>
+      <li>Banana</li>
+      <li>Cherry</li>
+    </ul>
+  </main>
+
+  <footer>
+    <p>&copy; 2026 CSS Selectors Assignment</p>
+  </footer>
+</body>
+</html>

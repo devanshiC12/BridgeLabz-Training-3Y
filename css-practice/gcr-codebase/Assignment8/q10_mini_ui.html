@@ -1,0 +1,146 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<title>Q10 - Mini UI Layout</title>
+<style>
+* { box-sizing: border-box; }
+body {
+  font-family: Arial, sans-serif;
+  margin: 0;
+  background: #f4f6f8;
+  display: flex;
+  flex-direction: column;
+  min-height: 100vh;
+}
+
+.site-header, .site-footer {
+  text-align: center;
+  padding: 16px;
+  background: #2c3e50;
+  color: #fff;
+}
+
+/* Push card to center of remaining space */
+.page-wrap {
+  flex: 1;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding: 30px 15px;
+}
+
+.main-card {
+  background: #fff;
+  border-radius: 12px;
+  box-shadow: 0 4px 14px rgba(0,0,0,0.15);
+  padding: 24px;
+  max-width: 340px;
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 16px;
+}
+
+.card-img {
+  width: 100%;
+  height: 140px;
+  object-fit: cover;
+  border-radius: 8px;
+}
+
+/* Flexbox form layout */
+.mini-form {
+  display: flex;
+  flex-direction: column;
+  width: 100%;
+  gap: 10px;
+}
+
+.mini-form label {
+  font-size: 0.9rem;
+  font-weight: bold;
+  color: #2c3e50;
+}
+
+.mini-form input {
+  padding: 8px 10px;
+  border: 1px solid #ccc;
+  border-radius: 6px;
+  outline: none;
+  transition: border 0.2s;
+}
+.mini-form input:focus {
+  border-color: #2980b9;
+  box-shadow: 0 0 4px rgba(41,128,185,0.4);
+}
+
+.form-buttons {
+  display: flex;
+  gap: 10px;
+  margin-top: 6px;
+}
+
+.submit-btn, .reset-btn {
+  flex: 1;
+  padding: 10px;
+  border: none;
+  border-radius: 6px;
+  cursor: pointer;
+  transition: background 0.2s, transform 0.2s;
+}
+
+.submit-btn {
+  background: #27ae60;
+  color: #fff;
+}
+.submit-btn:hover { background: #1e8449; }
+.submit-btn:active { transform: scale(0.96); }
+
+.reset-btn {
+  background: #bdc3c7;
+  color: #2c3e50;
+}
+.reset-btn:hover { background: #a4a9ab; }
+
+.submit-btn:focus, .reset-btn:focus {
+  outline: 2px solid #f39c12;
+  outline-offset: 2px;
+}
+
+/* Responsive */
+@media (max-width: 400px) {
+  .main-card { padding: 16px; }
+}
+</style>
+</head>
+<body>
+  <header class="site-header">
+    <h1>My Mini App</h1>
+  </header>
+
+  <main class="page-wrap">
+    <section class="main-card">
+      <img src="https://picsum.photos/id/1005/300/160" alt="Profile banner" class="card-img">
+
+      <form class="mini-form">
+        <label for="name">Name</label>
+        <input type="text" id="name" placeholder="Enter your name">
+
+        <label for="email">Email</label>
+        <input type="email" id="email" placeholder="Enter your email">
+
+        <div class="form-buttons">
+          <button type="submit" class="submit-btn">Submit</button>
+          <button type="reset" class="reset-btn">Reset</button>
+        </div>
+      </form>
+    </section>
+  </main>
+
+  <footer class="site-footer">
+    <p>&copy; 2026 Mini UI Assignment</p>
+  </footer>
+</body>
+</html>

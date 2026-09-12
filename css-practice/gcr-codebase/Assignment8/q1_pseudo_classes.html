@@ -1,0 +1,136 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<title>Q1 - Pseudo-Classes Demo</title>
+<style>
+/* Base reset */
+* { box-sizing: border-box; }
+body {
+  font-family: Arial, sans-serif;
+  margin: 0;
+  background: #f4f6f8;
+  color: #222;
+}
+
+header, footer {
+  text-align: center;
+  padding: 16px;
+  background: #2c3e50;
+  color: #fff;
+}
+
+/* Flexbox row to align examples */
+.row {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  gap: 20px;
+  padding: 30px;
+}
+
+.example-box {
+  background: #fff;
+  border-radius: 8px;
+  padding: 20px;
+  box-shadow: 0 2px 6px rgba(0,0,0,0.15);
+  width: 220px;
+  text-align: center;
+}
+
+/* :hover on link */
+.demo-link {
+  text-decoration: none;
+  color: #2980b9;
+  font-weight: bold;
+}
+.demo-link:hover {
+  color: #fff;
+  background: #2980b9;
+  padding: 6px 12px;
+  border-radius: 4px;
+}
+
+/* :focus on input */
+.demo-input {
+  padding: 8px;
+  border: 2px solid #ccc;
+  border-radius: 4px;
+  outline: none;
+}
+.demo-input:focus {
+  border-color: #27ae60;
+  background: #eafaf1;
+}
+
+/* :active on button */
+.demo-btn {
+  padding: 8px 16px;
+  border: none;
+  border-radius: 4px;
+  background: #e67e22;
+  color: #fff;
+  cursor: pointer;
+}
+.demo-btn:active {
+  background: #d35400;
+  transform: scale(0.95);
+}
+
+/* :nth-child on list items */
+.demo-list {
+  list-style: none;
+  padding: 0;
+}
+.demo-list li {
+  padding: 6px;
+  margin: 4px 0;
+  background: #ecf0f1;
+}
+.demo-list li:nth-child(even) {
+  background: #d5dbdb;
+  color: #34495e;
+}
+</style>
+</head>
+<body>
+  <header>
+    <h1>Pseudo-Classes Demonstration</h1>
+  </header>
+
+  <main class="row">
+    <!-- :hover example -->
+    <section class="example-box">
+      <a href="#" class="demo-link">Hover Me</a>
+      <p>:hover — changes style when mouse is over the link.</p>
+    </section>
+
+    <!-- :focus example -->
+    <section class="example-box">
+      <input type="text" class="demo-input" placeholder="Click to focus">
+      <p>:focus — highlights the input when it is selected/active.</p>
+    </section>
+
+    <!-- :active example -->
+    <section class="example-box">
+      <button class="demo-btn">Click Me</button>
+      <p>:active — changes style while the button is being pressed.</p>
+    </section>
+
+    <!-- :nth-child example -->
+    <section class="example-box">
+      <ul class="demo-list">
+        <li>Item 1</li>
+        <li>Item 2</li>
+        <li>Item 3</li>
+        <li>Item 4</li>
+      </ul>
+      <p>:nth-child(even) — colors alternate list items.</p>
+    </section>
+  </main>
+
+  <footer>
+    <p>&copy; 2026 CSS Pseudo-Classes Assignment</p>
+  </footer>
+</body>
+</html>

@@ -1,0 +1,116 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<title>Q7 - UI Components Page</title>
+<style>
+* { box-sizing: border-box; }
+body {
+  font-family: Arial, sans-serif;
+  margin: 0;
+  /* Soft background gradient */
+  background: linear-gradient(135deg, #e0f7fa, #fce4ec);
+  min-height: 100vh;
+}
+
+header, footer {
+  text-align: center;
+  padding: 16px;
+  background: #2c3e50;
+  color: #fff;
+}
+
+/* Card-like container using Flexbox */
+.ui-card {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 20px;
+  max-width: 400px;
+  margin: 60px auto;
+  padding: 30px;
+  background: #fff;
+  border-radius: 12px;
+  box-shadow: 0 4px 12px rgba(0,0,0,0.15);
+}
+
+.search-bar {
+  width: 100%;
+  padding: 10px 14px;
+  border-radius: 20px;
+  border: 1px solid #ccc;
+  outline: none;
+  transition: border 0.2s;
+}
+.search-bar:focus {
+  border-color: #2980b9;
+  box-shadow: 0 0 4px rgba(41,128,185,0.5);
+}
+
+.btn-group {
+  display: flex;
+  gap: 12px;
+}
+
+.ui-btn {
+  padding: 10px 20px;
+  border: none;
+  border-radius: 8px;
+  background: #2980b9;
+  color: #fff;
+  cursor: pointer;
+  box-shadow: 0 2px 4px rgba(0,0,0,0.15);
+  transition: background 0.2s;
+}
+.ui-btn:hover {
+  background: #1f6391;
+}
+.ui-btn.secondary {
+  background: #bdc3c7;
+  color: #2c3e50;
+}
+.ui-btn.secondary:hover {
+  background: #a4a9ab;
+}
+.ui-btn:focus {
+  outline: 2px solid #f39c12;
+  outline-offset: 2px;
+}
+
+.dropdown {
+  width: 100%;
+  padding: 10px;
+  border-radius: 8px;
+  border: 1px solid #ccc;
+}
+.dropdown:focus {
+  border-color: #2980b9;
+}
+</style>
+</head>
+<body>
+  <header>
+    <h1>User Interface Components</h1>
+  </header>
+
+  <main class="ui-card">
+    <input type="text" class="search-bar" placeholder="Search here...">
+
+    <div class="btn-group">
+      <button class="ui-btn">Submit</button>
+      <button class="ui-btn secondary">Cancel</button>
+    </div>
+
+    <select class="dropdown">
+      <option>Choose an option</option>
+      <option>Option 1</option>
+      <option>Option 2</option>
+      <option>Option 3</option>
+    </select>
+  </main>
+
+  <footer>
+    <p>&copy; 2026 UI Components Assignment</p>
+  </footer>
+</body>
+</html>
