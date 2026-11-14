@@ -1,0 +1,22 @@
+<!DOCTYPE html><html lang="en"><head><meta charset="UTF-8"><title>Q6 Table Filter</title>
+<link rel="stylesheet" href="base.css">
+<style>
+  table { width: 100%; border-collapse: collapse; margin-top: 10px; }
+  th, td { border: 1px solid #ccc; padding: 8px; text-align: left; }
+  #searchBox { width: 100%; }
+  #noResults { display: none; text-align: center; color: #c0392b; }
+</style></head><body>
+<h1>Student Search</h1>
+<input id="searchBox" placeholder="Search by name, branch or CGPA...">
+<table>
+  <thead><tr><th>Name</th><th>Branch</th><th>CGPA</th></tr></thead>
+  <tbody id="studentBody">
+    <tr><td>Aarav Sharma</td><td>CSE</td><td>8.7</td></tr>
+    <tr><td>Diya Verma</td><td>IT</td><td>9.1</td></tr>
+    <tr><td>Kabir Singh</td><td>ECE</td><td>7.9</td></tr>
+    <tr><td>Meera Gupta</td><td>CSE</td><td>8.4</td></tr>
+    <tr><td>Rohan Mehta</td><td>ME</td><td>7.2</td></tr>
+    <tr id="noResults"><td colspan="3">No results found</td></tr>
+  </tbody>
+</table>
+<script src="q6.js"></script></body></html>

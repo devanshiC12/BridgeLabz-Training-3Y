@@ -1,0 +1,18 @@
+<!DOCTYPE html><html lang="en"><head><meta charset="UTF-8"><title>Q9 Form Blocker</title>
+<link rel="stylesheet" href="base.css">
+<style>
+  input { width: 100%; }
+  #successMsg { color: green; font-weight: 600; margin-top: 10px; }
+</style></head><body>
+<h1>Sign-up Form</h1>
+<form id="signupForm" novalidate>
+  <label>Name<br><input id="name" name="name" type="text"></label>
+  <div class="error" id="nameError"></div>
+  <label>Email<br><input id="email" name="email" type="text"></label>
+  <div class="error" id="emailError"></div>
+  <label>Password (min 6)<br><input id="password" name="password" type="password"></label>
+  <div class="error" id="passwordError"></div>
+  <button type="submit">Submit</button>
+</form>
+<div id="successMsg"></div>
+<script src="q9.js"></script></body></html>
